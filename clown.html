@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clown Attendance Portal 🤡</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #f0fff0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #8b008b;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: yellow;
+      padding: 25px;
+      text-align: center;
+      font-size: 36px;
+      border-bottom: 10px double red;
+      animation: wiggle 1s infinite alternate;
+    }
+
+    @keyframes wiggle {
+      from { transform: rotate(-2deg); }
+      to { transform: rotate(2deg); }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    nav {
+      width: 25%;
+      background-color: #ffffcc;
+      border-right: 8px dashed #ffa500;
+      padding: 20px;
+    }
+
+    nav h2 {
+      color: #ff4500;
+      text-align: center;
+      font-size: 22px;
+      border-bottom: 3px dotted red;
+    }
+
+    nav ul {
+      list-style-type: "🤹 ";
+      padding-left: 15px;
+    }
+
+    nav li {
+      margin: 12px 0;
+      font-size: 16px;
+      color: #ff0000;
+      transition: transform 0.2s;
+    }
+
+    nav li:hover {
+      transform: rotate(5deg);
+    }
+
+    main {
+      width: 75%;
+      padding: 20px;
+      background: #fffacd;
+      border-left: 5px dashed hotpink;
+      animation: floaty 4s ease-in-out infinite;
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #ff00ff;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    .clown-image {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+      border: 8px groove purple;
+      box-shadow: 0 0 15px 5px orange;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .features {
+      background-color: #fefefe;
+      border: 5px dashed magenta;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      box-shadow: 3px 3px 8px gray;
+    }
+
+    .features h3 {
+      color: #ff1493;
+      font-size: 22px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ffd700;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      color: #8b0000;
+      border-top: 5px dotted purple;
+    }
+
+    .honk-btn {
+      display: block;
+      margin: 25px auto;
+      background-color: red;
+      color: yellow;
+      font-size: 24px;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 15px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .emoji-float {
+      position: fixed;
+      top: 10%;
+      left: 5%;
+      font-size: 60px;
+      animation: floatClown 5s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes floatClown {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(100vw, 30vh); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji-float">🤡</div>
+
+  <header>
+    🎪 WELCOME TO THE CLOWN ATTENDANCE PORTAL 9000 🎪
+  </header>
+
+  <div class="container">
+    <nav>
+      <h2>NAVI-GIGGLE</h2>
+      <ul>
+        <li>Locate lost clown shoes</li>
+        <li>Red nose compatibility test</li>
+        <li>Honking tips from the pros</li>
+        <li>Emergency Pie Protocol</li>
+        <li>Mime translation service</li>
+        <li>Banana phone setup guide</li>
+        <li>🎩 Top hat tracker 3000</li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>🤡 Easily Juggle Your Clowns With AI-Powered Honking</h2>
+     <img src="https://media.giphy.com/media/l2JHRhAtnJSDNJ2py/giphy.gif" alt="Dancing Clown" class="clown-image">
+
+
+      <p>
+        Managing clown attendance used to be messy — balloons everywhere, pies flying, no idea who even showed up.
+        Then came our tech: the **Invisible Pie Recognition System™** with built-in rubber chicken security.
+      </p>
+
+      <p>
+        Now, your clowns just honk, boing, or flip into the tent, and our AI checks if they’re real or just a decoy painted on the wall.
+      </p>
+
+      <button class="honk-btn" onclick="document.getElementById('honkSound').play()">🔊 HONK TO VERIFY CLOWN</button>
+
+      <div class="features">
+        <h3>🛠 Features</h3>
+        <ul>
+          <li>Boing-sensor detects clown bounce height</li>
+          <li>Pie-throwing accuracy tracking</li>
+          <li>AI analyzes honk pitch for identity theft</li>
+          <li>Sleep alert if clown naps in a cannon</li>
+          <li>Instant alert if a clown cries (too sad = send cake)</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    ⚠️ Warning: Do not accept pies from strangers. Hire only verified clowns. 🎉
+  </footer>
+
+  <audio id="honkSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+</body>
+</html>
